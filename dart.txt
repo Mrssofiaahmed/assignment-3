@@ -1,0 +1,170 @@
+void main() {
+
+  //Question 1:
+  //var ballist= ["Ball()","Ball()","Ball()","Ball()","Ball()"];
+  //print(ballist.toSet().toList());
+  //print(ballist.runtimeType);
+  //_________________________________________________________________
+  
+  //#Question 2 ,Method 1
+//var listA =[1,2,3,4,5,6,7];
+  //var listB = [3,5,6,7,9,10];
+  //print (listA + listB);
+
+  //Method 2
+  
+ // var listA =[1,2,3,4,5,6,7];
+  //var listB= [3,5,6,7,9,10];
+//listA. addAll(listB);
+ // print(listA);
+  
+  //Method # 3
+  
+  //List<int> first = [1,2,3,4,5,6,7];
+//List<int> second = [3,5,6,7,9,10];
+//List<int> difference = first.toSet().difference(second.toSet()).toList();
+  //print(difference.toString());
+  //_________________________________________________________
+//Question 5
+
+//var a = 7;
+//for(var i = 1; i<=15;i++){
+  //  print(i*a);
+  //}
+//___________
+// Question 6
+
+//var fruits=["apple","banana","mango","orange", "strawberry"];
+  //for (var i in fruits){
+    //print (i);
+  }
+Question 5
+import ‘dart:io’;
+
+void main() {
+  var a;
+  print(“please enter the no.”);
+  a = int.parse(stdin.readLineSync()!);
+  var b;
+
+  if (a<=3){
+    b=a-1;
+    print(“$a is a prime number”);
+  }
+    else if (a==4){
+      b=a-1;
+    print(“$a is not a prime number”);
+  }
+  else if (a==5 || a<=40){
+  for(b = 0; b<=a; b++){
+  var c = (6*b)+1;
+    var d = (6*b)-1;
+    if (c==a || d==a){
+    print(“$a is a prime number”);
+        break;
+    }
+  }
+ 
+}
+else if(a>=41) {for(b = 0; b<=a; b++){
+  var c = (b*b)+ b + 41;
+  
+    if (c==a){
+    print(“$a is a prime number”);
+    
+    break;
+    }
+
+}
+
+}
+
+if(b>a){
+  print(“$a is not a prime number”);
+  }
+}
+
+Question 7
+for(var i = 1; i<=100; i++){
+  var a = i%5;
+  if (a==0){
+    print(i);
+
+  }
+}
+
+}
+
+
+
+
+QUESTION 8
+
+void main() {
+var c= 32;
+var f = 64;  
+var far = (c*(9/5)) + 32;
+var cen = (f-32)*(5/9);
+print("$f oF is $cen oC ");
+print("$c oC is $far oF ");
+}
+
+
+
+QUESTION 9
+
+import 'dart:io';
+void main(List<String> args) {
+  print("Please Enter The First Number and press ENTER");
+var a = int.parse(stdin.readLineSync()!);
+print("Please Enter The Second Number and press ENTER");
+var b = int.parse(stdin.readLineSync()!);
+print("Please Choose The Function (+, -, x, /, %) and press ENTER");
+String f = stdin.readLineSync()!;
+
+if (f == "+") {
+ var sum  = a + b;
+ print("The sum of $a and $b is $sum");
+}
+
+else if (f == "-") {
+ var diff  = a - b;
+ print("The difference of $a and $b is $diff");
+}
+
+else if (f == "x") {
+ var prod  = a * b;
+ print("The product of $a and $b is $prod");
+}
+
+else if (f == "/") {
+ double div  = a / b;
+ print("The division of $a and $b is $div");
+}
+
+else if (f == "%") {
+ var mod  = a % b;
+ print("The mod of $a and $b is $mod");
+}
+
+}
+
+
+
+QUESTION 10
+
+import 'dart:io';
+
+void main() {
+print("Please Enter the Alphabat and press ENTER");
+String alph = stdin.readLineSync()!;
+if(alph == "a" || alph == "e" || alph == "i" || alph == "o" || alph == "u" || alph == "A" || alph == "E" || alph == "I" || alph == "O" || alph == "U"){
+  print("$alph is VOWEL");
+}
+else {
+  print("$alph is CONSONANT");
+}
+}
+
+
+
